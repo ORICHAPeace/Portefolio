@@ -37,6 +37,62 @@ font-family: 'Poppins', sans-serif;
 	-ms-box-sizing:border-box;
 	box-sizing:border-box;
 }
+.single-about-add-info p {
+    word-break: break-word;
+}
+.skill-box {
+	background: #fff;
+	padding: 25px;
+	margin-bottom: 30px;
+	border-radius: 5px;
+	box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+	height: 320px;
+	transition: .3s;
+}
+
+.skill-box:hover {
+	transform: translateY(-5px);
+}
+
+.skill-title {
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.skill-title i {
+	font-size: 28px;
+	color: #b636ff;
+	margin-right: 15px;
+}
+
+.skill-title h3 {
+	font-size: 18px;
+	font-weight: 600;
+	color: #333;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+.skill-box h4 {
+	font-size: 14px;
+	font-weight: 700;
+	color: #b636ff;
+	margin-bottom: 12px;
+	text-transform: uppercase;
+}
+
+.skill-box ul {
+	padding-left: 18px;
+	margin: 0;
+}
+
+.skill-box ul li {
+	font-size: 14px;
+	color: #666;
+	line-height: 1.9;
+}
+
 body{
 	font-family: 'Poppins', sans-serif;
 	font-size:16px;
@@ -330,7 +386,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
     padding-top:  50px;
 }
 .education-horizontal-timeline {
-    padding: 80px 0;
+    padding: 40px 0;
 }
 
 /*.education-horizontal-timeline*/
@@ -339,13 +395,13 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
 .single-horizontal-timeline .experience-time h3{text-transform: capitalize;}
 .single-horizontal-timeline .experience-time h3 span{text-transform:lowercase;}
 .single-horizontal-timeline .timeline-content h5 {margin: 15px 0;}
-.single-horizontal-timeline p {color: #999fb3;max-width: 335px;}
+.single-horizontal-timeline p {color: #999fb3;max-width: 500px;}
 
 /*.timeline-horizontal-border*/
 .timeline-horizontal-border {
     display:  flex;
     align-items: center;
-    padding: 26px 0 30px;
+    padding: 15px 0 20px;
 }
 .timeline-horizontal-border i {
     font-size:  10px;
@@ -356,9 +412,12 @@ span.single-timeline-horizontal {
     display:  inline-block;
     background: #b2c1ce;
     height:  1px;
-    width: 380px;
+    flex-grow: 1;
 }
-span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
+span.single-timeline-horizontal.spacial-horizontal-line {
+    width: 88px;
+    flex-grow: 0;
+}
 /*.timeline-horizontal-border*/
 
 /*.education-horizontal-timeline*/
@@ -548,6 +607,15 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     font-size: 16px;
 }
 .single-profile.profile-no-border{border-right:transparent;}
+
+/* Lien couvrant toute la carte profil */
+.profile-full-link {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    cursor: pointer;
+}
+
 .profile-border {
     border-bottom: 1px solid #b2c1ce;
 }

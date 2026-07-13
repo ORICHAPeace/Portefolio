@@ -58,6 +58,7 @@
 	.profile-border{border: 0;}
 
 	.single-horizontal-timeline {max-width: 350px;margin: 30px auto;}
+	.timeline-horizontal-border {display: none;}
 
 }/*max-width:767px*/
 
