@@ -1,5 +1,5 @@
-<!doctype html>
-<html class="no-js" lang="fr">
+﻿<!doctype html>
+<html lang="fr">
 
 <head>
 	<!-- meta data -->
@@ -14,7 +14,7 @@
 		rel="stylesheet">
 
 	<!-- title of site -->
-	<title>Portefolio</title>
+	<title>Aude Peace A. ORICHA | Portfolio Développeuse Full-Stack</title>
 
 	<!-- For favicon png -->
 	<link rel="shortcut icon" type="image/icon" href="assets/logo/favicon.png" />
@@ -24,13 +24,6 @@
 
 	<!--flat icon css-->
 	<link rel="stylesheet" href="assets/css/flaticon.css">
-
-	<!--animate.css-->
-	<link rel="stylesheet" href="assets/css/animate.css">
-
-	<!--owl.carousel.css-->
-	<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-	<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
 
 	<!--bootstrap.min.css-->
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -44,20 +37,9 @@
 	<!--responsive.css-->
 	<link rel="stylesheet" href="assets/css/responsive.css">
 
-	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-
-	<!--[if lt IE 9]>
-			<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-        <![endif]-->
-
 </head>
 
 <body>
-	<!--[if lte IE 9]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-        <![endif]-->
 
 	<!-- top-area Start -->
 	<header class="top-area">
@@ -78,14 +60,14 @@
 
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
-						<ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+						<ul class="nav navbar-nav navbar-right">
 							<li class=" smooth-menu active"></li>
 							<li class=" smooth-menu"><a href="#education">formations</a></li>
 							<li class="smooth-menu"><a href="#skills">competences</a></li>
 							<li class="smooth-menu"><a href="#experience">experiences</a></li>
+							<li class="smooth-menu"><a href="#portfolio">projets</a></li>
 							<li class="smooth-menu"><a href="#profiles">profils</a></li>
-							<li class="smooth-menu"><a href="#portfolio">portfolio</a></li>
-							<li class="smooth-menu"><a href="#contact">contact</a></li>
+							<li class="smooth-menu"><a href="#contact">contacts</a></li>
 						</ul><!--/.nav -->
 					</div><!-- /.navbar-collapse -->
 				</div><!--/.container-->
@@ -157,10 +139,16 @@
 								<div class="col-sm-4">
 									<div class="single-about-add-info">
 										<h3>SiteWeb</h3>
-										<p>peaceportfolio.42web.io</p>
+										<p>audepeace.vercel.app</p>
 									</div>
 								</div>
 							</div>
+						</div>
+						<!-- Bouton CV -->
+						<div class="about-cv-btn">
+							<a href="assets/download/cv-aude-peace-oricha.pdf" target="_blank" rel="noopener" class="cv-download-btn">
+								<i class="fa fa-file-pdf-o"></i> Mon CV
+							</a>
 						</div>
 					</div>
 					<div class="col-sm-offset-1 col-sm-5">
@@ -184,7 +172,7 @@
 
 									<!-- Portfolio -->
 									<li>
-										<a href="https://peaceportfolio.42web.io" target="_blank">
+										<a href="https://audepeace.vercel.app" target="_blank">
 											<i class="fa fa-globe" aria-hidden="true"></i>
 										</a>
 									</li>
@@ -540,6 +528,149 @@
 	</section><!--/.experience-->
 	<!--experience end -->
 
+	<!-- projet start -->
+	<section id="portfolio" class="projet-phare">
+
+		<!-- Animated background blobs -->
+		<div class="projet-bg-blob blob-1"></div>
+		<div class="projet-bg-blob blob-2"></div>
+		<div class="projet-bg-blob blob-3"></div>
+
+		<!-- Section title — même style que les autres sections -->
+		<div class="section-heading text-center">
+			<h2>projets</h2>
+		</div>
+
+		<div class="container">
+
+			<!-- Main card -->
+			<div class="projet-card" data-aos="fade-up">
+
+				<!-- Left: text content -->
+				<div class="projet-card-content">
+
+					<!-- Nom du projet + logo -->
+					<div class="projet-name-row">
+						<img src="assets/images/portfolio/logo.png" alt="Logo AgroBenin" class="projet-logo" />
+						<h3 class="projet-name">AgroBenin<span class="projet-name-dot">.</span></h3>
+					</div>
+
+					<p class="projet-description">
+						AgroBenin est une plateforme web conçue pour moderniser les échanges commerciaux dans le secteur agricole en créant un véritable espace de connexion entre producteurs et acheteurs. Au-delà de la simple gestion des produits et des transactions, elle centralise les opérations commerciales, facilite l'accès au marché et optimise les interactions entre les différents acteurs de la chaîne agricole. Grâce à une interface moderne, sécurisée et accessible, AgroBenin contribue à rendre le commerce agricole plus moderne, structuré, rapide et efficace.
+					</p>
+
+					<!-- Tech stack -->
+					<div class="projet-tech-stack">
+						<span class="tech-tag">React.js</span>
+						<span class="tech-tag">NestJS</span>
+						<span class="tech-tag">PostgreSQL</span>
+						<span class="tech-tag">Prisma</span>
+						<span class="tech-tag">Tailwind CSS</span>
+					</div>
+
+					<!-- CTA button -->
+					<div class="projet-actions">
+						<button class="btn-projet btn-projet-primary" id="btnVoirProjet">
+							<i class="fa fa-expand"></i>
+							Voir le projet
+						</button>
+						<a href="https://agrobenin.vercel.app" class="btn-projet btn-projet-outline" target="_blank" rel="noopener">
+							<i class="fa fa-globe"></i>
+							Visiter AgroBenin
+						</a>
+					</div>
+				</div>
+
+				<!-- Right: carousel -->
+				<div class="projet-carousel-wrapper" id="projetCarouselWrapper">
+					<div class="carousel-glow"></div>
+					<div class="projet-carousel-track-outer">
+						<div class="projet-carousel-track" id="projetCarouselTrack">
+							<div class="carousel-slide">
+								<img src="assets/images/portfolio/se connecter.png" alt="AgroBenin – Connexion" />
+								<div class="slide-label">Connexion</div>
+							</div>
+							<div class="carousel-slide">
+								<img src="assets/images/portfolio/s'inscrire.png" alt="AgroBenin – Inscription" />
+								<div class="slide-label">Inscription</div>
+							</div>
+							<div class="carousel-slide">
+								<img src="assets/images/portfolio/otp.png" alt="AgroBenin – OTP" />
+								<div class="slide-label">Vérification OTP</div>
+							</div>
+							<div class="carousel-slide">
+								<img src="assets/images/portfolio/accueil.png" alt="AgroBenin – Accueil" />
+								<div class="slide-label">Accueil</div>
+							</div>
+							<div class="carousel-slide">
+								<img src="assets/images/portfolio/maketplace1.png" alt="AgroBenin – Marketplace" />
+								<div class="slide-label">Marketplace</div>
+							</div>
+							<div class="carousel-slide">
+								<img src="assets/images/portfolio/maketplace2.png" alt="AgroBenin – Catalogue" />
+								<div class="slide-label">Catalogue</div>
+							</div>
+							<div class="carousel-slide">
+								<img src="assets/images/portfolio/paner.png" alt="AgroBenin – Panier" />
+								<div class="slide-label">Panier</div>
+							</div>
+							<div class="carousel-slide">
+								<img src="assets/images/portfolio/dashboard vendeur.png" alt="AgroBenin – Dashboard vendeur" />
+								<div class="slide-label">Dashboard vendeur</div>
+							</div>
+							<!-- Cloned slides for infinite loop -->
+							<div class="carousel-slide clone">
+								<img src="assets/images/portfolio/se connecter.png" alt="AgroBenin – Connexion" />
+								<div class="slide-label">Connexion</div>
+							</div>
+							<div class="carousel-slide clone">
+								<img src="assets/images/portfolio/s'inscrire.png" alt="AgroBenin – Inscription" />
+								<div class="slide-label">Inscription</div>
+							</div>
+							<div class="carousel-slide clone">
+								<img src="assets/images/portfolio/otp.png" alt="AgroBenin – OTP" />
+								<div class="slide-label">Vérification OTP</div>
+							</div>
+							<div class="carousel-slide clone">
+								<img src="assets/images/portfolio/accueil.png" alt="AgroBenin – Accueil" />
+								<div class="slide-label">Accueil</div>
+							</div>
+						</div>
+					</div>
+					<!-- Dot indicators -->
+					<div class="carousel-dots" id="carouselDots"></div>
+				</div>
+
+			</div><!-- /.projet-card -->
+
+		</div><!-- /.container -->
+
+		<!-- Expanded overlay carousel -->
+		<div class="projet-expanded-overlay" id="projetExpandedOverlay" aria-hidden="true">
+			<button class="btn-close-expanded" id="btnCloseExpanded" aria-label="Fermer">
+				<i class="fa fa-compress"></i>
+			</button>
+			<div class="expanded-carousel-track-outer">
+				<div class="expanded-carousel-track" id="expandedCarouselTrack">
+					<div class="expanded-slide"><img src="assets/images/portfolio/se connecter.png" alt="Connexion" /><div class="slide-label">Connexion</div></div>
+					<div class="expanded-slide"><img src="assets/images/portfolio/s'inscrire.png" alt="Inscription" /><div class="slide-label">Inscription</div></div>
+					<div class="expanded-slide"><img src="assets/images/portfolio/otp.png" alt="OTP" /><div class="slide-label">Vérification OTP</div></div>
+					<div class="expanded-slide"><img src="assets/images/portfolio/accueil.png" alt="Accueil" /><div class="slide-label">Accueil</div></div>
+					<div class="expanded-slide"><img src="assets/images/portfolio/maketplace1.png" alt="Marketplace" /><div class="slide-label">Marketplace</div></div>
+					<div class="expanded-slide"><img src="assets/images/portfolio/maketplace2.png" alt="Catalogue" /><div class="slide-label">Catalogue</div></div>
+					<div class="expanded-slide"><img src="assets/images/portfolio/paner.png" alt="Panier" /><div class="slide-label">Panier</div></div>
+					<div class="expanded-slide"><img src="assets/images/portfolio/dashboard vendeur.png" alt="Dashboard vendeur" /><div class="slide-label">Dashboard vendeur</div></div>
+				</div>
+			</div>
+			<button class="expanded-nav expanded-prev" id="expandedPrev" aria-label="Précédent"><i class="fa fa-chevron-left"></i></button>
+			<button class="expanded-nav expanded-next" id="expandedNext" aria-label="Suivant"><i class="fa fa-chevron-right"></i></button>
+			<div class="expanded-dots" id="expandedDots"></div>
+		</div>
+
+	</section>
+	<!-- projet end -->
+
+
 	<!--profiles start -->
 	<section id="profiles" class="profiles">
 		<div class="profiles-details">
@@ -584,7 +715,7 @@
 
 						<div class="col-sm-3">
 							<div class="single-profile">
-								<a class="profile-full-link" href="https://peaceportfolio.42web.io" target="_blank" aria-label="Portfolio"></a>
+								<a class="profile-full-link" href="https://audepeace.vercel.app" target="_blank" aria-label="Portfolio"></a>
 								<div class="profile-txt">
 									<i class="fa fa-globe"></i>
 									<div class="profile-icon-name">Portfolio</div>
@@ -622,82 +753,10 @@
 
 	<!--profiles end -->
 
-	<!--portfolio start -->
-	<section id="portfolio" class="portfolio">
-		<div class="portfolio-details">
-			<div class="section-heading text-center">
-				<h2>portfolio</h2>
-			</div>
-			<div class="container">
-				<div class="portfolio-content">
-					<div class="isotope">
-						<div class="row">
-
-							<div class="col-sm-4">
-								<div class="item">
-									<img src="https://cdn.prod.website-files.com/66153b9f3cb891501ecbf45d/667c000f5f76ca2359b630c5_I1PF2FjDhjEygfb5CM6d.jpeg"
-										alt="portfolio image" />
-									<div class="isotope-overlay">
-										<a href="#">
-											developpement
-										</a>
-									</div><!-- /.isotope-overlay -->
-								</div><!-- /.item -->
-								<div class="item">
-									<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNnej0T9C12c1uM5wQyzbgU97gQBxDoQUEFA&s"
-										alt="portfolio image" />
-									<div class="isotope-overlay">
-										<a href="#">
-											developpement web
-										</a>
-									</div><!-- /.isotope-overlay -->
-								</div><!-- /.item -->
-							</div><!-- /.col -->
-
-							<div class="col-sm-4">
-								<div class="item">
-									<img src="assets/images/portfolio/p3.jpg" alt="portfolio image" />
-									<div class="isotope-overlay">
-										<a href="#">
-											web design
-										</a>
-									</div><!-- /.isotope-overlay -->
-								</div><!-- /.item -->
-							</div><!-- /.col -->
-
-							<div class="col-sm-4">
-								<div class="item">
-									<img src="https://media.istockphoto.com/id/815594930/fr/photo/ic%C3%B4ne-doutil-informatique-service-travaux.jpg?s=612x612&w=0&k=20&c=HMK7E0pwocl6Xh1S8W_bS7BLIgSp3KUBRlMzYBtB6HQ="
-										alt="portfolio image" />
-									<div class="isotope-overlay">
-										<a href="#">
-											Maintenance
-										</a>
-									</div><!-- /.isotope-overlay -->
-								</div><!-- /.item -->
-								<div class="item">
-									<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUOLMdsFRQMKnYGYRx3V-m7d3aFSkFtA9MXA&s"
-										alt="portfolio image" />
-									<div class="isotope-overlay">
-										<a href="#">
-											Maintenance
-										</a>
-									</div><!-- /.isotope-overlay -->
-								</div><!-- /.item -->
-							</div><!-- /.col -->
-						</div><!-- /.row -->
-					</div><!--/.isotope-->
-				</div><!--/.gallery-content-->
-			</div><!--/.container-->
-		</div><!--/.portfolio-details-->
-
-	</section><!--/.portfolio-->
-	<!--portfolio end -->
-
 	<!--contact start -->
 	<section id="contact" class="contact">
 		<div class="section-heading text-center">
-			<h2>Contact</h2>
+			<h2>Contacts</h2>
 		</div>
 		<div class="container">
 			<div class="contact-content">
@@ -766,7 +825,7 @@
 									</div>
 									<div class="single-contact-add-info">
 										<h3>Site Web</h3>
-										<p>peaceportfolio.42web.io</p>
+										<p>audepeace.vercel.app</p>
 									</div>
 								</div>
 							</div>
@@ -774,7 +833,7 @@
 								<ul>
 									<li><a href="https://github.com/ORICHAPeace" target="_blank"><i class="fa fa-github"></i></a></li>
 									<li><a href="https://www.linkedin.com/in/peace-oricha-651916420/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-									<li><a href="https://peaceportfolio.42web.io" target="_blank"><i class="fa fa-globe"></i></a></li>
+									<li><a href="https://audepeace.vercel.app" target="_blank"><i class="fa fa-globe"></i></a></li>
 									<li><a href="mailto:peaceoricha562@gmail.com"><i class="fa fa-envelope"></i></a></li>
 									<li><a href="https://wa.me/+22946073743" target="_blank"><i class="fa fa-whatsapp"></i></a></li>
 								</ul>
@@ -794,7 +853,7 @@
 		<div class="container">
 			<div class="hm-footer-copyright text-center">
 				<p>
-					&copy; copyright Peace. conçu et développé par <a href="peaceportfolio.42web.io">OriTek</a>
+					&copy; copyright Peace. conçu et développé par <a href="audepeace.vercel.app">OriTek</a>
 				</p><!--/p-->
 			</div><!--/.text-center-->
 		</div><!--/.container-->
@@ -812,20 +871,197 @@
 	<!-- jQuery -->
 	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
-	<!--modernizr.min.js-->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-
-	<!--bootstrap.min.js-->
+	<!-- Bootstrap -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-	<!-- bootsnav js -->
+	<!-- Bootsnav -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootsnav/1.0.2/bootsnav.js"></script>
 
-	<!-- jquery-easing -->
+	<!-- jQuery Easing (smooth scroll) -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
 
-	<!--owl.carousel.js-->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+	<!-- Projet – Carousel & Scroll Animations -->
+	<script>
+	(function () {
+		/* ===================================================
+		   MINI CAROUSEL (dans la section)
+		=================================================== */
+		var track     = document.getElementById('projetCarouselTrack');
+		var dotsWrap  = document.getElementById('carouselDots');
+		var totalReal = 8;
+		var current   = 0;
+		var autoTimer = null;
+		var isPaused  = false;
+		var SPEED     = 3200;
+
+		function buildDots() {
+			dotsWrap.innerHTML = '';
+			for (var i = 0; i < totalReal; i++) {
+				var d = document.createElement('button');
+				d.className = 'carousel-dot' + (i === 0 ? ' active' : '');
+				d.setAttribute('aria-label', 'Slide ' + (i + 1));
+				(function (idx) { d.addEventListener('click', function () { goTo(idx); }); })(i);
+				dotsWrap.appendChild(d);
+			}
+		}
+
+		function updateDots(idx) {
+			dotsWrap.querySelectorAll('.carousel-dot').forEach(function (d, i) {
+				d.classList.toggle('active', i === idx % totalReal);
+			});
+		}
+
+		function getSlideWidth() {
+			var first = track.querySelector('.carousel-slide');
+			return first ? first.offsetWidth : 0;
+		}
+
+		function goTo(idx, instant) {
+			current = idx;
+			var sw = getSlideWidth();
+			track.style.transition = instant ? 'none' : 'transform 0.7s cubic-bezier(0.77,0,0.175,1)';
+			track.style.transform  = 'translateX(-' + (current * sw) + 'px)';
+			updateDots(current);
+			if (current >= totalReal) {
+				setTimeout(function () {
+					track.style.transition = 'none';
+					current = current - totalReal;
+					track.style.transform  = 'translateX(-' + (current * getSlideWidth()) + 'px)';
+					updateDots(current);
+				}, 750);
+			}
+		}
+
+		function next() { goTo(current + 1); }
+
+		function startAuto() {
+			clearInterval(autoTimer);
+			autoTimer = setInterval(function () { if (!isPaused) next(); }, SPEED);
+		}
+
+		var wrapper = document.querySelector('.projet-carousel-track-outer');
+		if (wrapper) {
+			wrapper.addEventListener('mouseenter', function () { isPaused = true; });
+			wrapper.addEventListener('mouseleave', function () { isPaused = false; });
+		}
+
+		window.addEventListener('resize', function () { goTo(current, true); });
+
+		/* ===================================================
+		   EXPANDED OVERLAY CAROUSEL
+		=================================================== */
+		var overlay         = document.getElementById('projetExpandedOverlay');
+		var expTrack        = document.getElementById('expandedCarouselTrack');
+		var expDotsWrap     = document.getElementById('expandedDots');
+		var btnOpen         = document.getElementById('btnVoirProjet');
+		var btnClose        = document.getElementById('btnCloseExpanded');
+		var btnPrev         = document.getElementById('expandedPrev');
+		var btnNext         = document.getElementById('expandedNext');
+		var expTotal        = 8;
+		var expCurrent      = 0;
+		var expAutoTimer    = null;
+
+		function buildExpDots() {
+			expDotsWrap.innerHTML = '';
+			for (var i = 0; i < expTotal; i++) {
+				var d = document.createElement('button');
+				d.className = 'carousel-dot' + (i === 0 ? ' active' : '');
+				d.setAttribute('aria-label', 'Slide ' + (i + 1));
+				(function (idx) { d.addEventListener('click', function () { expGoTo(idx); }); })(i);
+				expDotsWrap.appendChild(d);
+			}
+		}
+
+		function updateExpDots(idx) {
+			expDotsWrap.querySelectorAll('.carousel-dot').forEach(function (d, i) {
+				d.classList.toggle('active', i === idx);
+			});
+		}
+
+		function expGetSlideWidth() {
+			var first = expTrack.querySelector('.expanded-slide');
+			return first ? first.offsetWidth : 0;
+		}
+
+		function expGoTo(idx, instant) {
+			expCurrent = ((idx % expTotal) + expTotal) % expTotal;
+			expTrack.style.transition = instant ? 'none' : 'transform 0.6s cubic-bezier(0.77,0,0.175,1)';
+			expTrack.style.transform  = 'translateX(-' + (expCurrent * expGetSlideWidth()) + 'px)';
+			updateExpDots(expCurrent);
+		}
+
+		function expStartAuto() {
+			clearInterval(expAutoTimer);
+			expAutoTimer = setInterval(function () {
+				expGoTo(expCurrent + 1);
+			}, 3500);
+		}
+
+		function openExpanded() {
+			expGoTo(current % expTotal, true);
+			overlay.classList.add('is-open');
+			overlay.setAttribute('aria-hidden', 'false');
+			document.body.style.overflow = 'hidden';
+			expStartAuto();
+		}
+
+		function closeExpanded() {
+			overlay.classList.remove('is-open');
+			overlay.setAttribute('aria-hidden', 'true');
+			document.body.style.overflow = '';
+			clearInterval(expAutoTimer);
+		}
+
+		if (btnOpen)  btnOpen.addEventListener('click', openExpanded);
+		if (btnClose) btnClose.addEventListener('click', closeExpanded);
+		if (btnPrev)  btnPrev.addEventListener('click', function () { clearInterval(expAutoTimer); expGoTo(expCurrent - 1); expStartAuto(); });
+		if (btnNext)  btnNext.addEventListener('click', function () { clearInterval(expAutoTimer); expGoTo(expCurrent + 1); expStartAuto(); });
+
+		// Close on overlay background click
+		overlay.addEventListener('click', function (e) { if (e.target === overlay) closeExpanded(); });
+
+		// Close on Escape
+		document.addEventListener('keydown', function (e) {
+			if (e.key === 'Escape') closeExpanded();
+			if (e.key === 'ArrowLeft')  { clearInterval(expAutoTimer); expGoTo(expCurrent - 1); expStartAuto(); }
+			if (e.key === 'ArrowRight') { clearInterval(expAutoTimer); expGoTo(expCurrent + 1); expStartAuto(); }
+		});
+
+		window.addEventListener('resize', function () { expGoTo(expCurrent, true); });
+
+		/* ===================================================
+		   SCROLL REVEAL
+		=================================================== */
+		var revealEls = document.querySelectorAll('[data-aos]');
+		function revealOnScroll() {
+			revealEls.forEach(function (el) {
+				var rect  = el.getBoundingClientRect();
+				var delay = parseInt(el.getAttribute('data-aos-delay') || 0, 10);
+				if (rect.top < window.innerHeight - 80) {
+					setTimeout(function () { el.classList.add('aos-animate'); }, delay);
+				}
+			});
+		}
+		window.addEventListener('scroll', revealOnScroll);
+
+		/* ===================================================
+		   INIT
+		=================================================== */
+		function init() {
+			buildDots();
+			goTo(0, true);
+			startAuto();
+			buildExpDots();
+		}
+
+		if (document.readyState === 'loading') {
+			document.addEventListener('DOMContentLoaded', function () { init(); revealOnScroll(); });
+		} else {
+			init();
+			revealOnScroll();
+		}
+	})();
+	</script>
 
 	<!--Custom JS inline-->
 	<script>
@@ -843,6 +1079,13 @@
 				}
 			});
 
+			// Fermer le menu burger au clic sur un lien
+			$('.navbar-nav a').on('click', function () {
+				if ($('.navbar-toggle').is(':visible')) {
+					$('.navbar-toggle').trigger('click');
+				}
+			});
+
 			// Sticky navbar
 			$(window).on('scroll', function () {
 				if ($(this).scrollTop() > 100) {
@@ -853,9 +1096,18 @@
 			});
 
 			// Scroll to top
-			$('.scroll-top a').on('click', function () {
-				$('html, body').animate({ scrollTop: 0 }, 800);
+			$('#scroll-Top .return-to-top').on('click', function () {
+				$('html, body').animate({ scrollTop: 0 }, 800, 'easeInOutExpo');
 				return false;
+			});
+
+			// Afficher/masquer le bouton scroll-top
+			$(window).on('scroll', function () {
+				if ($(this).scrollTop() > 300) {
+					$('#scroll-Top .return-to-top').fadeIn(300);
+				} else {
+					$('#scroll-Top .return-to-top').fadeOut(300);
+				}
 			});
 
 		});

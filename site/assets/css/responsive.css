@@ -1,97 +1,157 @@
-@media screen and (max-width:1680px){
+/* ============================================================
+   RESPONSIVE — Portfolio d'Aude Peace ORICHA
+   Breakpoints : 1199 / 991 / 767 / 575 / 400
+   ============================================================ */
 
-}/*max-width:1680px*/
-@media screen and (max-width:1440px){
-	.single-about-img img {max-width:100%;}
-	.single-about-img:before,.about-list-icon{width: 100%;}
-}/*max-width:1440px*/
+/* ---- 1199px : grands écrans réduits ---- */
+@media screen and (max-width: 1199px) {
+	nav.navbar.bootsnav ul.nav > li > a { padding: 35px 10px; }
+	.welcome-hero { height: 768px; }
+	.timeline-content span > i,
+	.experience-time span > i { left: -15.5%; }
+}
 
-@media screen and (max-width:1199px){
-	nav.navbar.bootsnav ul.nav > li > a { padding: 35px 8px;}
-	
-	.welcome-hero {height: 768px;}
+/* ---- 991px : tablettes paysage ---- */
+@media screen and (max-width: 991px) {
 
-	.timeline-content span>i, .experience-time span>i {left: -15.5%;}
-}/*max-width:1199px*/
+	/* Nav */
+	nav.navbar.bootsnav .navbar-toggle {
+		display: inline-block;
+		float: right;
+		margin-right: 0;
+		margin-top: 21px;
+	}
+	nav.navbar.bootsnav .navbar-brand  { float: left !important; }
+	nav.navbar.bootsnav .navbar-collapse.collapse.in { padding-bottom: 20px; }
+	nav.navbar.bootsnav ul.nav > li > a { padding: 14px 24px !important; }
 
-@media screen and (max-width:1024px){
+	/* Hero */
+	.welcome-hero { height: 600px; }
+	.header-text h2 { font-size: 38px; }
 
+	/* About */
+	.single-about-img { margin-top: 40px; }
 
-}/*max-width:1024px*/
+	/* Education */
+	.single-horizontal-timeline .experience-time,
+	.single-horizontal-timeline .timeline-content { margin: 0; }
 
-@media screen and (max-width:1008px){
-	nav.navbar.bootsnav ul.nav > li.dropdown span.megamenu-title  {display:block;color: #43465d;font-size: 18px;}
-	nav.navbar.bootsnav ul.dropdown-menu.megamenu-content .content ul.menu-col li .megamenu-sub-title a {margin-top: 20px;font-size: 14px;}
-	nav.navbar.bootsnav ul.dropdown-menu.megamenu-content .content ul.menu-col li .megamenu-sub-txt a{margin-bottom: 15px;}
-}/*max-width:1008px*/
+	/* Experience */
+	.experience-time-responsive { display: block; }
+	.experience-time-main       { display: none; }
+	.experience-time,
+	.timeline-content { text-align: left; margin-bottom: 20px; margin-left: 40px; }
+	.timeline-content span > i  { left: 0; top: -54%; }
+	.experience-time span > i   { left: -6%; top: 6%; }
+	.main-timeline:before       { left: 0.4%; }
 
-@media screen and (max-width:992px){
-	nav.navbar.bootsnav .navbar-collapse.collapse.in {padding-bottom: 30px;}
-	nav.navbar.bootsnav .navbar-toggle {display: inline-block; float: right;margin-right: 0;margin-top: 21px;}
-	nav.navbar.bootsnav .navbar-brand {float: left!important;}
-	nav.navbar.bootsnav ul.nav > li > a {padding: 15px 0px;border: transparent;}
-}/*max-width:992px*/
+	/* Skills */
+	.skill-box { height: auto; min-height: 200px; }
 
-@media screen and (max-width:991px){
-	.experience-time-responsive{display: block;}
-	.experience-time-main{display: none;}
-	.experience-time,.timeline-content{text-align: left;margin-bottom: 20px;margin-left: 40px;}
-	.timeline-content span>i{left: 0%;top: -54%;}
-	.experience-time span>i {left: -6%;top: 6%;}
-	.main-timeline:before {left:0.4%;}
+	/* Projet */
+	.projet-card {
+		flex-direction: column;
+		gap: 32px;
+		padding: 36px 28px;
+	}
+	.projet-card-content {
+		flex: none;
+		max-width: 100%;
+	}
+}
 
-	.single-horizontal-timeline .experience-time,.single-horizontal-timeline .timeline-content {margin: 0;}
-}/*max-width:991px*/
+/* ---- 767px : tablettes portrait / grands mobiles ---- */
+@media screen and (max-width: 767px) {
 
-@media screen and (max-width:768px){
-    
-}/*max-width:768px*/
+	/* Hero */
+	.welcome-hero { height: 520px; }
+	.header-text h2 { font-size: 30px; }
+	.header-text p  { font-size: 16px; margin: 20px 0 40px; }
+	.header-text a  { width: 170px; height: 52px; line-height: 52px; font-size: 14px; }
 
-@media screen and (max-width:767px){
-	.single-about-img {max-width: 450px;}
-	.experience-time span>i,.timeline-content span>i,.main-timeline:before {display: none;}
-	.experience-time, .timeline-content {margin-left: 0;}
+	/* About */
+	.single-about-txt h3 { font-size: 15px; }
+	.single-about-img    { max-width: 450px; margin: 40px auto 0; }
 
-	.isotope .item {max-width: 350px;margin: 0 auto 30px;}
+	/* Education */
+	.timeline-horizontal-border { display: none; }
+	.single-horizontal-timeline { max-width: 100%; margin: 20px 0; }
 
-	.single-profile {max-width: 350px; margin: 30px auto;border: 0;}
-	.profile-border{border: 0;}
+	/* Experience */
+	.experience-time span > i,
+	.timeline-content span > i,
+	.main-timeline:before { display: none; }
+	.experience-time,
+	.timeline-content { margin-left: 0; }
+	.single-timeline-box { margin-bottom: 40px; }
 
-	.single-horizontal-timeline {max-width: 350px;margin: 30px auto;}
-	.timeline-horizontal-border {display: none;}
+	/* Profiles */
+	.single-profile  { max-width: 100%; border: 0; margin: 0; }
+	.profile-border  { border: 0; }
+	.profiles-content .col-sm-3 { margin-bottom: 1px; }
 
-}/*max-width:767px*/
+	/* Projet */
+	.projet-card    { padding: 28px 20px; gap: 28px; }
+	.projet-name    { font-size: 28px; }
+	.carousel-slide img { height: 300px; }
+	.blob-1, .blob-2, .blob-3 { display: none; }
 
-@media screen and (max-width: 660px){
+	/* Contact */
+	.single-contact-box { padding-top: 40px; }
+}
 
-}/*max-width:660px*/
+/* ---- 575px : mobiles standards ---- */
+@media screen and (max-width: 575px) {
 
-@media screen and (max-width: 640px){
+	/* Hero */
+	.welcome-hero   { height: 480px; }
+	.header-text h2 { font-size: 26px; }
 
-}/*max-width:640px*/
+	/* Section headings */
+	.section-heading h2 { font-size: 20px; padding-bottom: 30px; }
 
-@media screen and (max-width: 580px){
+	/* About */
+	.single-about-add-info { margin: 20px 0; }
 
-}/*max-width:580px*/
+	/* Education — aération mobile */
+	.education { padding-top: 40px; }
+	.education-horizontal-timeline { padding: 20px 0 10px; }
+	.single-horizontal-timeline { max-width: 100%; margin: 0 0 36px; padding: 20px 16px; background: #fff; box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
+	.single-horizontal-timeline .experience-time h2 { font-size: 20px; }
+	.single-horizontal-timeline .experience-time h3 { font-size: 13px; margin-top: 4px; }
+	.single-horizontal-timeline .timeline-content h4 { font-size: 14px; }
+	.single-horizontal-timeline .timeline-content h5 { font-size: 12px; margin: 8px 0 10px; }
+	.single-horizontal-timeline p { font-size: 13px; line-height: 1.7; }
 
-@media screen and (max-width: 540px){
-	.subscribe-title h2 {font-size: 24px;}
+	/* Skills */
+	.skill-box { padding: 18px; }
+	.skill-title h3 { font-size: 15px; }
 
-}/*max-width:540px*/
+	/* Projet */
+	.projet-phare   { padding: 50px 0 70px; }
+	.projet-card    { padding: 20px 14px; gap: 24px; }
+	.projet-name    { font-size: 24px; }
+	.projet-description { font-size: 13px; }
+	.carousel-slide img { height: 220px; }
+	.btn-projet     { padding: 11px 18px !important; font-size: 13px !important; }
+	.projet-actions { flex-direction: column; gap: 10px; }
+	.btn-projet     { width: 100%; justify-content: center; }
 
-@media screen and (max-width: 480px){
-	
-}/*max-width:480px*/
+	/* Expanded overlay nav */
+	.expanded-nav   { width: 36px; height: 36px; font-size: 14px; }
+	.expanded-prev  { left: 6px; }
+	.expanded-next  { right: 6px; }
+	.btn-close-expanded { top: 10px; right: 10px; width: 38px; height: 38px; font-size: 16px; }
 
-@media screen and (max-width: 440px){
-	
-}/*max-width:400px*/
+	/* Contact */
+	.hm-foot-icon ul li > a { margin-right: 12px; }
+}
 
-@media screen and (max-width:350px){
-
-}/*max-width:350px*/
-
-@media screen and  (max-width: 320px){
-	
-}/*max-width:320px*/
-
+/* ---- 400px : très petits mobiles ---- */
+@media screen and (max-width: 400px) {
+	.header-text h2   { font-size: 22px; }
+	.navbar-brand     { font-size: 16px !important; }
+	.projet-name      { font-size: 20px; }
+	.carousel-slide img { height: 180px; }
+	.tech-tag         { font-size: 11px; padding: 4px 10px; }
+}
