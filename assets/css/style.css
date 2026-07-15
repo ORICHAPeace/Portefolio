@@ -651,12 +651,15 @@ span.single-timeline-horizontal.spacial-horizontal-line { width: 88px; flex-grow
 }
 .contact-form .single-contact-btn .contact-btn,
 .contact-form .single-contact-btn .contact-btn:focus {
+	width: 100%;
+	height: 100%;
 	margin-top: 0;
 	outline: 0 !important;
 	border: 0;
 	color: #fff;
 	border-radius: 0;
 	font-size: 14px;
+	cursor: pointer;
 	transition: .5s;
 }
 .single-contact-btn:hover { background: #9f00ff; border-color: #9f00ff; }
